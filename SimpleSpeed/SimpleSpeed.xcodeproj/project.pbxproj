@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		21320E3A2D4519AC004C7033 /* SimpleSpeedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E392D4519AC004C7033 /* SimpleSpeedApp.swift */; };
-		21320E3C2D4519AC004C7033 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E3B2D4519AC004C7033 /* ContentView.swift */; };
+		21320E3C2D4519AC004C7033 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E3B2D4519AC004C7033 /* MainView.swift */; };
 		21320E3E2D4519AF004C7033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21320E3D2D4519AF004C7033 /* Assets.xcassets */; };
 		21320E412D4519AF004C7033 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21320E402D4519AF004C7033 /* Preview Assets.xcassets */; };
 		21320E4B2D4519AF004C7033 /* SimpleSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E4A2D4519AF004C7033 /* SimpleSpeedTests.swift */; };
 		21320E552D4519AF004C7033 /* SimpleSpeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E542D4519AF004C7033 /* SimpleSpeedUITests.swift */; };
 		21320E572D4519AF004C7033 /* SimpleSpeedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E562D4519AF004C7033 /* SimpleSpeedUITestsLaunchTests.swift */; };
+		21320E652D453232004C7033 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E642D453232004C7033 /* LocationManager.swift */; };
+		21320E672D453264004C7033 /* SpeedConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E662D453264004C7033 /* SpeedConverter.swift */; };
+		21320E692D453285004C7033 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E682D453285004C7033 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		21320E362D4519AC004C7033 /* SimpleSpeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSpeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21320E392D4519AC004C7033 /* SimpleSpeedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpeedApp.swift; sourceTree = "<group>"; };
-		21320E3B2D4519AC004C7033 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21320E3B2D4519AC004C7033 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		21320E3D2D4519AF004C7033 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21320E402D4519AF004C7033 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		21320E462D4519AF004C7033 /* SimpleSpeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSpeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,10 @@
 		21320E502D4519AF004C7033 /* SimpleSpeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleSpeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21320E542D4519AF004C7033 /* SimpleSpeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpeedUITests.swift; sourceTree = "<group>"; };
 		21320E562D4519AF004C7033 /* SimpleSpeedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSpeedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		21320E632D4530ED004C7033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		21320E642D453232004C7033 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		21320E662D453264004C7033 /* SpeedConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConverter.swift; sourceTree = "<group>"; };
+		21320E682D453285004C7033 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,12 @@
 		21320E382D4519AC004C7033 /* SimpleSpeed */ = {
 			isa = PBXGroup;
 			children = (
+				21320E632D4530ED004C7033 /* Info.plist */,
 				21320E392D4519AC004C7033 /* SimpleSpeedApp.swift */,
-				21320E3B2D4519AC004C7033 /* ContentView.swift */,
+				21320E3B2D4519AC004C7033 /* MainView.swift */,
+				21320E682D453285004C7033 /* MainViewModel.swift */,
+				21320E642D453232004C7033 /* LocationManager.swift */,
+				21320E662D453264004C7033 /* SpeedConverter.swift */,
 				21320E3D2D4519AF004C7033 /* Assets.xcassets */,
 				21320E3F2D4519AF004C7033 /* Preview Content */,
 			);
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21320E3C2D4519AC004C7033 /* ContentView.swift in Sources */,
+				21320E692D453285004C7033 /* MainViewModel.swift in Sources */,
+				21320E672D453264004C7033 /* SpeedConverter.swift in Sources */,
+				21320E3C2D4519AC004C7033 /* MainView.swift in Sources */,
 				21320E3A2D4519AC004C7033 /* SimpleSpeedApp.swift in Sources */,
+				21320E652D453232004C7033 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +439,8 @@
 				DEVELOPMENT_TEAM = YBCCTWH2WW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleSpeed/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SimpleSpeed needs access to your location to determine your speed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +470,8 @@
 				DEVELOPMENT_TEAM = YBCCTWH2WW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimpleSpeed/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "SimpleSpeed needs access to your location to determine your speed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -16,7 +16,12 @@
 		21320E572D4519AF004C7033 /* SimpleSpeedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E562D4519AF004C7033 /* SimpleSpeedUITestsLaunchTests.swift */; };
 		21320E652D453232004C7033 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E642D453232004C7033 /* LocationManager.swift */; };
 		21320E672D453264004C7033 /* SpeedConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E662D453264004C7033 /* SpeedConverter.swift */; };
-		21320E692D453285004C7033 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E682D453285004C7033 /* MainViewModel.swift */; };
+		21320E692D453285004C7033 /* SpeedoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E682D453285004C7033 /* SpeedoViewModel.swift */; };
+		21320E6B2D4551DA004C7033 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6A2D4551DA004C7033 /* SettingsView.swift */; };
+		21320E6D2D4556D5004C7033 /* SpeedoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6C2D4556D5004C7033 /* SpeedoView.swift */; };
+		21320E6F2D456D7E004C7033 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6E2D456D7E004C7033 /* Setting.swift */; };
+		21320E712D456D9A004C7033 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E702D456D9A004C7033 /* SettingsManager.swift */; };
+		21320E732D456DB9004C7033 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E722D456DB9004C7033 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +55,12 @@
 		21320E632D4530ED004C7033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		21320E642D453232004C7033 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		21320E662D453264004C7033 /* SpeedConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConverter.swift; sourceTree = "<group>"; };
-		21320E682D453285004C7033 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		21320E682D453285004C7033 /* SpeedoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoViewModel.swift; sourceTree = "<group>"; };
+		21320E6A2D4551DA004C7033 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		21320E6C2D4556D5004C7033 /* SpeedoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoView.swift; sourceTree = "<group>"; };
+		21320E6E2D456D7E004C7033 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		21320E702D456D9A004C7033 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		21320E722D456DB9004C7033 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +114,14 @@
 				21320E632D4530ED004C7033 /* Info.plist */,
 				21320E392D4519AC004C7033 /* SimpleSpeedApp.swift */,
 				21320E3B2D4519AC004C7033 /* MainView.swift */,
-				21320E682D453285004C7033 /* MainViewModel.swift */,
+				21320E6A2D4551DA004C7033 /* SettingsView.swift */,
+				21320E6C2D4556D5004C7033 /* SpeedoView.swift */,
+				21320E682D453285004C7033 /* SpeedoViewModel.swift */,
 				21320E642D453232004C7033 /* LocationManager.swift */,
 				21320E662D453264004C7033 /* SpeedConverter.swift */,
+				21320E6E2D456D7E004C7033 /* Setting.swift */,
+				21320E702D456D9A004C7033 /* SettingsManager.swift */,
+				21320E722D456DB9004C7033 /* SettingsViewModel.swift */,
 				21320E3D2D4519AF004C7033 /* Assets.xcassets */,
 				21320E3F2D4519AF004C7033 /* Preview Content */,
 			);
@@ -268,11 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21320E692D453285004C7033 /* MainViewModel.swift in Sources */,
+				21320E6D2D4556D5004C7033 /* SpeedoView.swift in Sources */,
+				21320E692D453285004C7033 /* SpeedoViewModel.swift in Sources */,
 				21320E672D453264004C7033 /* SpeedConverter.swift in Sources */,
 				21320E3C2D4519AC004C7033 /* MainView.swift in Sources */,
+				21320E6B2D4551DA004C7033 /* SettingsView.swift in Sources */,
+				21320E732D456DB9004C7033 /* SettingsViewModel.swift in Sources */,
 				21320E3A2D4519AC004C7033 /* SimpleSpeedApp.swift in Sources */,
+				21320E6F2D456D7E004C7033 /* Setting.swift in Sources */,
 				21320E652D453232004C7033 /* LocationManager.swift in Sources */,
+				21320E712D456D9A004C7033 /* SettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

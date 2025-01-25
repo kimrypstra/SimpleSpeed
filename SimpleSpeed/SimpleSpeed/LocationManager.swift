@@ -9,6 +9,7 @@ protocol LocationManager: CLLocationManagerDelegate {
 class LocationManagerImpl: NSObject, LocationManager {
     
     static let `default` = LocationManagerImpl()
+    
     private let locationManager = CLLocationManager()
     
     /// The device's speed in `m/s`

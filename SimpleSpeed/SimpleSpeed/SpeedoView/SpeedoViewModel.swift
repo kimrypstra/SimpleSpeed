@@ -5,6 +5,7 @@ class SpeedoViewModel: ObservableObject {
     
     @Published var speed = "--"
     @Published var units: String? = nil
+    @Published var showTrip = true
     
     private let locationManager: LocationManager
     private let settingsManager: SettingsManager
@@ -61,6 +62,8 @@ class SpeedoViewModel: ObservableObject {
         } else {
             units = nil 
         }
+        
+        showTrip = settings[Setting.showTrip]?.value ?? false
     }
 }
 

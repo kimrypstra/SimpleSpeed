@@ -2,7 +2,9 @@ import Combine
 import CoreLocation
 
 protocol LocationManager: CLLocationManagerDelegate {
+    // probs get rid of speed now that we send location
     var speed: PassthroughSubject<Double, LocationError> { get }
+    var location: PassthroughSubject<CLLocation, LocationError> { get }
 }
 
 /// Just an async wrapper around CLLocationManager
@@ -14,6 +16,7 @@ class LocationManagerImpl: NSObject, LocationManager {
     
     /// The device's speed in `m/s`
     let speed: PassthroughSubject<Double, LocationError> = .init()
+    let location: PassthroughSubject<CLLocation, LocationError> = .init()
     
     override init() {
         super.init()
@@ -42,13 +45,14 @@ class LocationManagerImpl: NSObject, LocationManager {
     
     // MARK: CLLocationManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last,
-              location.speedAccuracy >= 0.0 else {
+        guard let latestLocation = locations.last,
+              latestLocation.speedAccuracy >= 0.0 else {
             speed.send(completion: .failure(LocationError.lowSpeedAccuracy))
             return
         }
         
-        speed.send(location.speed)
+        speed.send(latestLocation.speed)
+        location.send(latestLocation)
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {

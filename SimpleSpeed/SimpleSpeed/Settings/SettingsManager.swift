@@ -14,12 +14,11 @@ class SettingsManagerImpl: SettingsManager {
     static let `default` = SettingsManagerImpl()
     static let availableSettings: [Setting] = [
         .showUnits,
-        .other
+        .showTrip
     ]
     
     // The set of settings that was last saved
     let settingsChanged: PassthroughSubject<[Setting], Never> = .init()
-    
     
     private let userDefaults = UserDefaults.standard
     

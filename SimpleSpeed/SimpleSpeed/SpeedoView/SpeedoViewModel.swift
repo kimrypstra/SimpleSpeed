@@ -5,6 +5,7 @@ class SpeedoViewModel: ObservableObject {
     
     @Published var speed = "--"
     @Published var units: String? = nil
+    @Published var showTrip = true
     
     private let locationManager: LocationManager
     private let settingsManager: SettingsManager
@@ -19,7 +20,7 @@ class SpeedoViewModel: ObservableObject {
     }
     
     private func subscribeToObservables() {
-        locationManager.speed
+        locationManager.speedUpdated
             .tryMap { value in
                 try SpeedConverter.format(value)
             }
@@ -51,21 +52,17 @@ class SpeedoViewModel: ObservableObject {
     
     /// Requests current settings from ``SettingsManager``
     private func loadInitialSettings() {
-        handleSettings(settings: settingsManager.loadSettings())
+        handleSettings(settings: settingsManager.loadBooleanSettings())
     }
     
     /// Sets flags based on the provided settings
-    private func handleSettings(settings: [Setting]) {
-        if settings[Setting.showUnits]?.value == true {
+    private func handleSettings(settings: [BooleanSetting]) {
+        if settings[BooleanSetting.showUnits]?.value == true {
             units = Locale.autoupdatingCurrent.measurementSystem == .metric ? "km/h" : "mph"
         } else {
             units = nil 
         }
-    }
-}
-
-extension Array where Element == Setting  {
-    subscript (_ setting: Setting) -> Setting? {
-        return first(where: { $0.key == setting.key })
+        
+        showTrip = settings[BooleanSetting.showTrips]?.value ?? false
     }
 }

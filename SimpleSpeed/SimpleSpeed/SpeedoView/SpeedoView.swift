@@ -12,9 +12,18 @@ struct SpeedoView: View {
             
             if let units = viewModel.units {
                 Text(units)
+                    .font(.system(.body, design: .serif))
                     .foregroundStyle(Color.white)
+            }
+            
+            if viewModel.showTrip {
+                TripsView()
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
+}
+
+#Preview {
+    SpeedoView()
 }

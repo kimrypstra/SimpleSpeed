@@ -2,7 +2,8 @@ import Combine
 
 class SettingsViewModel: ObservableObject {
 
-    @Published var settings: [Setting] = []
+    /// Simple on/off settings
+    @Published var booleanSettings: [BooleanSetting] = []
     
     private var cancellables: [AnyCancellable] = []
     private let settingsManager: SettingsManager
@@ -14,10 +15,10 @@ class SettingsViewModel: ObservableObject {
     }
     
     private func loadSettings() {
-        settings = settingsManager.loadSettings()
+        booleanSettings = settingsManager.loadBooleanSettings()
     }
     
-    func settingChanged(setting: Setting) {
+    func settingChanged(setting: BooleanSetting) {
         settingsManager.setSetting(setting: setting)
         loadSettings()
     }

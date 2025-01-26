@@ -19,9 +19,22 @@
 		21320E692D453285004C7033 /* SpeedoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E682D453285004C7033 /* SpeedoViewModel.swift */; };
 		21320E6B2D4551DA004C7033 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6A2D4551DA004C7033 /* SettingsView.swift */; };
 		21320E6D2D4556D5004C7033 /* SpeedoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6C2D4556D5004C7033 /* SpeedoView.swift */; };
-		21320E6F2D456D7E004C7033 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6E2D456D7E004C7033 /* Setting.swift */; };
+		21320E6F2D456D7E004C7033 /* BooleanSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E6E2D456D7E004C7033 /* BooleanSetting.swift */; };
 		21320E712D456D9A004C7033 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E702D456D9A004C7033 /* SettingsManager.swift */; };
 		21320E732D456DB9004C7033 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21320E722D456DB9004C7033 /* SettingsViewModel.swift */; };
+		2144E1A92D45848300990867 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1A82D45847A00990867 /* TripView.swift */; };
+		2144E1AC2D46971500990867 /* TripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1AB2D46971500990867 /* TripManager.swift */; };
+		2144E1AE2D46972E00990867 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1AD2D46972E00990867 /* Trip.swift */; };
+		2144E1B02D46974F00990867 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1AF2D46974F00990867 /* TripViewModel.swift */; };
+		2144E1B22D46979300990867 /* DistanceConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1B12D46979300990867 /* DistanceConverter.swift */; };
+		2144E1B52D55074A00990867 /* IOService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1B42D55074A00990867 /* IOService.swift */; };
+		2144E1B72D55075F00990867 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1B62D55075F00990867 /* UserDefaultsService.swift */; };
+		2144E1B92D5507E600990867 /* TripSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1B82D5507E600990867 /* TripSettingsViewModel.swift */; };
+		2144E1BB2D55080E00990867 /* TripSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1BA2D55080E00990867 /* TripSettingsView.swift */; };
+		2144E1BD2D551FF300990867 /* Double+toString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1BC2D551FF300990867 /* Double+toString.swift */; };
+		2144E1BF2D55201C00990867 /* Array+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1BE2D55201C00990867 /* Array+Subscripts.swift */; };
+		2144E1C12D55203E00990867 /* MockTripManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1C02D55203E00990867 /* MockTripManager.swift */; };
+		2144E1C32D55206C00990867 /* TripSettingsPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144E1C22D55206C00990867 /* TripSettingsPanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +71,22 @@
 		21320E682D453285004C7033 /* SpeedoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoViewModel.swift; sourceTree = "<group>"; };
 		21320E6A2D4551DA004C7033 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		21320E6C2D4556D5004C7033 /* SpeedoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedoView.swift; sourceTree = "<group>"; };
-		21320E6E2D456D7E004C7033 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		21320E6E2D456D7E004C7033 /* BooleanSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanSetting.swift; sourceTree = "<group>"; };
 		21320E702D456D9A004C7033 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		21320E722D456DB9004C7033 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		2144E1A82D45847A00990867 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		2144E1AB2D46971500990867 /* TripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripManager.swift; sourceTree = "<group>"; };
+		2144E1AD2D46972E00990867 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		2144E1AF2D46974F00990867 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		2144E1B12D46979300990867 /* DistanceConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConverter.swift; sourceTree = "<group>"; };
+		2144E1B42D55074A00990867 /* IOService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOService.swift; sourceTree = "<group>"; };
+		2144E1B62D55075F00990867 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		2144E1B82D5507E600990867 /* TripSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSettingsViewModel.swift; sourceTree = "<group>"; };
+		2144E1BA2D55080E00990867 /* TripSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSettingsView.swift; sourceTree = "<group>"; };
+		2144E1BC2D551FF300990867 /* Double+toString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+toString.swift"; sourceTree = "<group>"; };
+		2144E1BE2D55201C00990867 /* Array+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Subscripts.swift"; sourceTree = "<group>"; };
+		2144E1C02D55203E00990867 /* MockTripManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTripManager.swift; sourceTree = "<group>"; };
+		2144E1C22D55206C00990867 /* TripSettingsPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSettingsPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +140,11 @@
 				21320E632D4530ED004C7033 /* Info.plist */,
 				21320E392D4519AC004C7033 /* SimpleSpeedApp.swift */,
 				21320E3B2D4519AC004C7033 /* MainView.swift */,
-				21320E6A2D4551DA004C7033 /* SettingsView.swift */,
-				21320E6C2D4556D5004C7033 /* SpeedoView.swift */,
-				21320E682D453285004C7033 /* SpeedoViewModel.swift */,
-				21320E642D453232004C7033 /* LocationManager.swift */,
-				21320E662D453264004C7033 /* SpeedConverter.swift */,
-				21320E6E2D456D7E004C7033 /* Setting.swift */,
-				21320E702D456D9A004C7033 /* SettingsManager.swift */,
-				21320E722D456DB9004C7033 /* SettingsViewModel.swift */,
+				2144E1B32D55073E00990867 /* IO */,
+				2144E1AA2D46970800990867 /* Trip */,
+				2144E1A72D45833A00990867 /* Utils */,
+				2144E1A62D45832700990867 /* SpeedoView */,
+				2144E1A52D45830A00990867 /* Settings */,
 				21320E3D2D4519AF004C7033 /* Assets.xcassets */,
 				21320E3F2D4519AF004C7033 /* Preview Content */,
 			);
@@ -151,6 +174,62 @@
 				21320E562D4519AF004C7033 /* SimpleSpeedUITestsLaunchTests.swift */,
 			);
 			path = SimpleSpeedUITests;
+			sourceTree = "<group>";
+		};
+		2144E1A52D45830A00990867 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				21320E702D456D9A004C7033 /* SettingsManager.swift */,
+				21320E6A2D4551DA004C7033 /* SettingsView.swift */,
+				21320E722D456DB9004C7033 /* SettingsViewModel.swift */,
+				2144E1B82D5507E600990867 /* TripSettingsViewModel.swift */,
+				2144E1BA2D55080E00990867 /* TripSettingsView.swift */,
+				2144E1C22D55206C00990867 /* TripSettingsPanelView.swift */,
+				21320E6E2D456D7E004C7033 /* BooleanSetting.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2144E1A62D45832700990867 /* SpeedoView */ = {
+			isa = PBXGroup;
+			children = (
+				21320E6C2D4556D5004C7033 /* SpeedoView.swift */,
+				21320E682D453285004C7033 /* SpeedoViewModel.swift */,
+				21320E642D453232004C7033 /* LocationManager.swift */,
+			);
+			path = SpeedoView;
+			sourceTree = "<group>";
+		};
+		2144E1A72D45833A00990867 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21320E662D453264004C7033 /* SpeedConverter.swift */,
+				2144E1BC2D551FF300990867 /* Double+toString.swift */,
+				2144E1B12D46979300990867 /* DistanceConverter.swift */,
+				2144E1BE2D55201C00990867 /* Array+Subscripts.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2144E1AA2D46970800990867 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				2144E1AB2D46971500990867 /* TripManager.swift */,
+				2144E1C02D55203E00990867 /* MockTripManager.swift */,
+				2144E1A82D45847A00990867 /* TripView.swift */,
+				2144E1AF2D46974F00990867 /* TripViewModel.swift */,
+				2144E1AD2D46972E00990867 /* Trip.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		2144E1B32D55073E00990867 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				2144E1B42D55074A00990867 /* IOService.swift */,
+				2144E1B62D55075F00990867 /* UserDefaultsService.swift */,
+			);
+			path = IO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,15 +362,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2144E1BD2D551FF300990867 /* Double+toString.swift in Sources */,
 				21320E6D2D4556D5004C7033 /* SpeedoView.swift in Sources */,
 				21320E692D453285004C7033 /* SpeedoViewModel.swift in Sources */,
+				2144E1B92D5507E600990867 /* TripSettingsViewModel.swift in Sources */,
+				2144E1AC2D46971500990867 /* TripManager.swift in Sources */,
+				2144E1B52D55074A00990867 /* IOService.swift in Sources */,
 				21320E672D453264004C7033 /* SpeedConverter.swift in Sources */,
 				21320E3C2D4519AC004C7033 /* MainView.swift in Sources */,
 				21320E6B2D4551DA004C7033 /* SettingsView.swift in Sources */,
+				2144E1A92D45848300990867 /* TripView.swift in Sources */,
+				2144E1B02D46974F00990867 /* TripViewModel.swift in Sources */,
+				2144E1BF2D55201C00990867 /* Array+Subscripts.swift in Sources */,
+				2144E1C12D55203E00990867 /* MockTripManager.swift in Sources */,
+				2144E1AE2D46972E00990867 /* Trip.swift in Sources */,
+				2144E1B72D55075F00990867 /* UserDefaultsService.swift in Sources */,
 				21320E732D456DB9004C7033 /* SettingsViewModel.swift in Sources */,
 				21320E3A2D4519AC004C7033 /* SimpleSpeedApp.swift in Sources */,
-				21320E6F2D456D7E004C7033 /* Setting.swift in Sources */,
+				2144E1B22D46979300990867 /* DistanceConverter.swift in Sources */,
+				21320E6F2D456D7E004C7033 /* BooleanSetting.swift in Sources */,
 				21320E652D453232004C7033 /* LocationManager.swift in Sources */,
+				2144E1BB2D55080E00990867 /* TripSettingsView.swift in Sources */,
+				2144E1C32D55206C00990867 /* TripSettingsPanelView.swift in Sources */,
 				21320E712D456D9A004C7033 /* SettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +558,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +590,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
